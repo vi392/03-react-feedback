@@ -72,9 +72,9 @@ function Secound() {
         </div>
 
        <div id="text5">
-       {/* <p>View</p> */}
+      
        <Link to="/view">
-       <button>View</button>
+       <button id="btn">View</button>
        </Link>
        </div>
       </div>

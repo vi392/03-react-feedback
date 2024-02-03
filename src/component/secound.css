@@ -143,4 +143,10 @@
 #text5 p{
     color:#3583F6;
 }
+#btn{
+    width: 80px;
+    border-radius: 5px;
+    color:white;
+    background-color: #3583F6;
+}
 
