@@ -1,6 +1,7 @@
 import React from "react";
 import "./secound.css";
 import { BsBell } from "react-icons/bs";
+// import { Link } from "react-router-dom";
 import { Link, useNavigate } from "react-router-dom";
 
 function Secound() {
@@ -62,12 +63,13 @@ function Secound() {
 
         <div id="text4">
         <p>Status</p>
-        <select id="para3">
+        {/* <select id="para3">
         <option hidden>--select--</option>
             <option id="col1">closed</option>
             <option id="col2">Inprocess</option>
             <option id="col3">open</option>
-          </select>
+          </select> */}
+          <h4>closed</h4>
           
         </div>
 

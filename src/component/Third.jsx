@@ -1,7 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./third.css";
 import { BsBell } from "react-icons/bs";
+import Pop from './Pop'
+
+
 function Third() {
+
+  const[popper,setPopper] =useState(false)
+
+  const poptab=()=>setPopper(true)
+  const closepop=()=>setPopper(false)
+
+
   return (
     <>
     <div className="first">
@@ -59,10 +69,16 @@ function Third() {
   <p>Your comment</p><br></br>
   <input type="text" id="one"></input>
 
-  </div>
+  </div> 
 
   <div id ="one2_3">
-    <button type="submit" >Update</button>
+    
+    <button type="submit" onClick={poptab}  >Update</button>  
+
+    
+
+    {popper && <Pop closepop={closepop} /> }
+    
   </div>
     </>
   )
